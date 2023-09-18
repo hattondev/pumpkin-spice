@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "pumpkin-spice"
+  description: "This is my pumpkin spice application"
+  annotations:
+    github.com/project-slug: hattondev/pumpkin-spice
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "pumpkin-spice"
+  links:
+    - url: https://pumpkin-spice.apps.wwtlab.net
+      title: Website
+      icon: Website
+    - url: https://app.harness.io/ng/#/account/KDANFuIkSvK5VMJ5Stni7g/cd/orgs/default/projects/PS_10015914/gitops/applications/ad54321-pumpkin-spice?agentId=prodcluster
+      title: ArgoCD/Harness
+      icon: cloud
+  tags:
+    - golang
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "engineering"
